@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int fprintf(FILE *__restrict__stream, const char *__restrict__format-string, …);
+int printf(const char *__restrict__format-string, …);
+int sprintf(char *__restrict__buffer, const char *__restrict__format-string, …);
+
+#define _OPEN_SYS_UNLOCKED_EXT 1
+#include <stdio.h>
+
+int fprintf_unlocked(FILE *__restrict__stream, 
+                     const char *__restrict__format-string, …);
+int printf_unlocked(const char *__restrict__format-string, …);
